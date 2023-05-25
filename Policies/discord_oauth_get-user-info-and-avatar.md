@@ -15,8 +15,12 @@
 import base64
 import requests
 
-avatar_url = 'https://cdn.discordapp.com/avatars/{id}/{avatar}.png'
+avatar_url = 'https://cdn.discordapp.com/avatars/{id}/{avatar}.png?site={avatar_size}'
 avatar_stream_content = 'data:image/png;base64,{base64_string}' #Converts base64 image into html syntax useable with authentik's avatar attributes feature
+
+### CONFIG ###
+avatar_size = "64" #Valid values: 16,32,64,128,256,512,1024
+##############
 
 def get_as_base64(url):
     """Returns the base64 content of the url
@@ -39,7 +43,7 @@ user.attributes['discord'] = {
   'discriminator': userinfo['discriminator'],
   'email': userinfo['email'],
   'avatar': userinfo['avatar'],
-  'avatar_url': avatar_url.format(id=userinfo['id'],avatar=userinfo['avatar']) if userinfo['avatar'] else None,
+  'avatar_url': avatar_url.format(id=userinfo['id'],avatar=userinfo['avatar'],avatar_size=avatar_size) if userinfo['avatar'] else None,
 }
 
 #If the user has an avatar, assign it to the user
