@@ -1,4 +1,4 @@
-# discord_oauth_assign-roles-of-guild-as-authentik-roles_authentication
+# discord_oauth_get-user-info-and-avatar
 
 ## Description
 - Puts discord's oauth info into the user's attributed ``discord``

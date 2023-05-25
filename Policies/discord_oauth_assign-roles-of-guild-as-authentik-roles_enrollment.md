@@ -1,4 +1,4 @@
-# discord_oauth_assign-roles-of-guild-as-authentik-roles_authentication
+# discord_oauth_assign-roles-of-guild-as-authentik-roles_enrollment
 
 ## Description
 Assigns roles of a specific guild as authentik groups based on a map: Discord_Role_ID<>Authentik_Role_Name
