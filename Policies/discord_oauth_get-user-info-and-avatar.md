@@ -47,8 +47,7 @@ user.attributes['discord'] = {
 }
 
 #If the user has an avatar, assign it to the user
-if ('avatar_url' in user.attributes['discord']):
-    user.attributes['avatar'] = get_avatar_from_avatar_url(user.attributes['discord']['avatar_url'])
+user.attributes['avatar'] = get_avatar_from_avatar_url(user.attributes['discord']['avatar_url'])
  
 user.save()
 return True
