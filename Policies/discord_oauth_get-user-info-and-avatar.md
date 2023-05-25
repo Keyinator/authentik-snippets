@@ -2,7 +2,7 @@
 
 ## Description
 - Puts discord's oauth info into the user's attributed ``discord``
-- Assigns the discord-avatar as web-syntax in ``avatar_url`` for use with https://goauthentik.io/docs/installation/configuration#authentik_avatars
+- Assigns the discord-avatar as web-syntax in ``avatar`` for use with https://goauthentik.io/docs/installation/configuration#authentik_avatars
 
 ## Locations
 | Flow | Stage |
