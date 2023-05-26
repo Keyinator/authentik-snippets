@@ -15,7 +15,7 @@
 import base64
 import requests
 
-avatar_url = 'https://cdn.discordapp.com/avatars/{id}/{avatar}.png?site={avatar_size}'
+avatar_url = 'https://cdn.discordapp.com/avatars/{id}/{avatar}.png?size={avatar_size}'
 avatar_stream_content = 'data:image/png;base64,{base64_string}' #Converts base64 image into html syntax useable with authentik's avatar attributes feature
 
 ### CONFIG ###
